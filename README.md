@@ -59,7 +59,8 @@ This is a Pytorch tutorial and personal notes, comments
       4. ###  Training a classifier
 
       * **torchvision**:
-          -  outputs PILImage images of range[0,1] dataloader: in **torch.utils.data.DataLoader()**
+          -  outputs PILImage images of range[0,1]
+          -  dataloader: in **torch.utils.data.DataLoader()**
 
       * **training procedure**:
          - get the inputs
