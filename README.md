@@ -8,7 +8,6 @@ This is a Pytorch tutorial and personal notes, comments
     **NumPy-like**:
       * indexing works
       * resizing: x.view(-1)
-
       The size -1 is inferred from other dimensions
       * x.item() returns the value of the tensor if it's a scalar
       * Tensor to NumPy: x.numpy()
