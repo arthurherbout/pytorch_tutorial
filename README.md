@@ -58,20 +58,21 @@ This is a Pytorch tutorial and personal notes, comments
       4. ###  Training a classifier
 
       **torchvision** outputs PILImage images of range[0,1]
+
       dataloader: in **torch.utils.data.DataLoader()**
 
       **training procedure**:
-        - get the inputs
-        - reset the optimizer
-        - forward + backward + optimize
-        - print statistics
+         - get the inputs
+         - reset the optimizer
+         - forward + backward + optimize
+         - print statistics
 
       **testing procedure**:
-        - force no_grad with **with torch.no_grad()**
-        - no backward
-        - correct+= (predicted == labels).sum().item()
+         - force no_grad with **with torch.no_grad()**
+         - no backward
+         - correct+= (predicted == labels).sum().item()
 
       **Using GPU**:
-        - define our GPU device as 'cuda:0': torch.device("cuda:0" if **torch.cuda.is_available()** else "cpu")
-        - migrate everything to GPU: net.to(device)
-        - we will have to seed the inputs and targets at every step
+         - define our GPU device as 'cuda:0': torch.device("cuda:0" if **torch.cuda.is_available()** else "cpu")
+         - migrate everything to GPU: net.to(device)
+         - we will have to seed the inputs and targets at every step
