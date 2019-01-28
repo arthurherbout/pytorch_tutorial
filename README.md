@@ -4,6 +4,7 @@ This is a Pytorch tutorial and personal notes, comments
 1. 60 minute Blitz
     1. manipulating tensors
     Nothing spectacular here.
+    
     NumPy-like:
       * indexing works
       * resizing: x.view(-1) # the size -1 is inferred from other dimensions
@@ -16,4 +17,3 @@ This is a Pytorch tutorial and personal notes, comments
       * CUDA  device object: torch.device("cuda")
       * create a tensor on GPU: torch.ones_like(x, device=device)
       * move a tensor to GPU: x.to(device)
- 
