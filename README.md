@@ -107,27 +107,27 @@ This is a Pytorch tutorial and personal notes, comments
       * **Define Models**
 
       Here are some elementary elements of the encoder model:
-        - GRU: Gated Recurrent Unit. In order to encode both past and future
+      - GRU: Gated Recurrent Unit. In order to encode both past and future
         context, we can use a bidirectional GRU.
-        - pack and unpack pading
+      - pack and unpack pading
 
       Here are some elementary elements of the decoder model:
-        - generate response sentence in a token-by-token fashion
-        - attention mechanism: allows the decoder to pay attention to certain
+      - generate response sentence in a token-by-token fashion
+      - attention mechanism: allows the decoder to pay attention to certain
         parts of the input sequence.
-        - score functions: ways of calculate the attention energies between the
+      - score functions: ways of calculate the attention energies between the
         encoder output and decoder output.
-        - Attention layer
+      - Attention layer
 
       * **Define Training Procedure**
 
       Keys ideas:
-        - masked loss: when calculating the loss, we have to take into account
+      - masked loss: when calculating the loss, we have to take into account
         the padding.
-        - teacher forcing: at some probability, we use the current target word
+      - teacher forcing: at some probability, we use the current target word
         as the decoder's next input rather than using the decoder's current
         guess. It can lead to model instability during inference
-        - gradient clipping: we prevent the gradients from growing exponentially
+      - gradient clipping: we prevent the gradients from growing exponentially
         and either overflow or overshoot steep cliffs in the cost function.
 
       * **Define Evaluation**
