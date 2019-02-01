@@ -94,7 +94,8 @@ This is a Pytorch tutorial and personal notes, comments
       characters
       - trim rarely used words: soften the difficulty
 
-      * **prepare data for models**
+
+      * **Prepare data for models**
 
       We need to convert our data into torch tensors. We must be aware of the
       variation of sentence length in our batches. We can use zero-padding for
@@ -119,6 +120,7 @@ This is a Pytorch tutorial and personal notes, comments
         encoder output and decoder output.
       - Attention layer
 
+
       * **Define Training Procedure**
 
       Keys ideas:
@@ -129,6 +131,7 @@ This is a Pytorch tutorial and personal notes, comments
         guess. It can lead to model instability during inference
       - gradient clipping: we prevent the gradients from growing exponentially
         and either overflow or overshoot steep cliffs in the cost function.
+
 
       * **Define Evaluation**
 
