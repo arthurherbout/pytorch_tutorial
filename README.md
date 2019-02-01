@@ -82,6 +82,7 @@ This is a Pytorch tutorial and personal notes, comments
     1. #### Chatbot tutorial
 
     * **preprocessing text**
+
     This is a fundamental step in DL, especially in text-related tasks.
     We need to understand the structure of the base file we are given.
     Many steps are necessary:
@@ -94,6 +95,7 @@ This is a Pytorch tutorial and personal notes, comments
       - trim rarely used words: soften the difficulty
 
       * **prepare data for models**
+
       We need to convert our data into torch tensors. We must be aware of the
       variation of sentence length in our batches. We can use zero-padding for
       shorter sentences.
@@ -103,6 +105,7 @@ This is a Pytorch tutorial and personal notes, comments
       Good batch size is therefore (max_length, batch_size)
 
       * **Define Models**
+
       Here are some elementary elements of the encoder model:
         - GRU: Gated Recurrent Unit. In order to encode both past and future
         context, we can use a bidirectional GRU.
@@ -117,6 +120,7 @@ This is a Pytorch tutorial and personal notes, comments
         - Attention layer
 
       * **Define Training Procedure**
+
       Keys ideas:
         - masked loss: when calculating the loss, we have to take into account
         the padding.
@@ -127,5 +131,6 @@ This is a Pytorch tutorial and personal notes, comments
         and either overflow or overshoot steep cliffs in the cost function.
 
       * **Define Evaluation**
+      
       We have to get rid of teacher forcing: we simply choose
       the word from decoder_output with the highest softmax value.
