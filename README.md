@@ -137,3 +137,9 @@ This is a Pytorch tutorial and personal notes, comments
 
       We have to get rid of teacher forcing: we simply choose
       the word from decoder_output with the highest softmax value.
+
+      2. #### Classifying names
+
+      * **unicodeToAscii**:
+      very important when dealing with text
+      https://stackoverflow.com/a/518232/2809427
